@@ -14,6 +14,8 @@
 * **ESLint**
 * **Javascript(ES6)**
 * **HTML CSS Support**
+* **HTML Snippets**
+* **CSS Snippets**
 * **Live Server**
 * **Material Icon Theme**
 * **Path Intellisense**
@@ -24,31 +26,31 @@
 ## Now let's get started
 1. **What is JavaScript?**
 
-`JavaScript is a very powerful client-side scripting language. 
+JavaScript is a very powerful client-side scripting language. 
 JavaScript is used mainly for enhancing the interaction of a user with the webpage. 
 In other words, you can make your webpage more lively and interactive, with the help of JavaScript. 
-JavaScript is also being used widely in game development and Mobile application development.`
+JavaScript is also being used widely in game development and Mobile application development.
 
 2. **What is the difference between JavaScript and Java?**
 
-`Java is an OOP programming language while JavaScript is an OOP programming script. JavaScript code is written completely in text and need only be interpreted. Java, on the other hand, must be compiled.`
+Java is an OOP programming language while JavaScript is an OOP programming script. JavaScript code is written completely in text and need only be interpreted. Java, on the other hand, must be compiled.
 
-`JavaScript is a scripting language that is interpreted, meaning that it is not compiled.`
+JavaScript is a scripting language that is interpreted, meaning that it is not compiled.
 
 
 3. **History of JavaScript**
 
-`JavaScript was developed by Brendan Eich in 1995, which appeared in Netscape, a popular browser of that time.
+JavaScript was developed by Brendan Eich in 1995, which appeared in Netscape, a popular browser of that time.
 The language was initially called LiveScript and was later renamed JavaScript. 
 There are many programmers who think that JavaScript and Java are the same. 
 In fact, JavaScript and Java are very much unrelated. 
 Java is a very complex programming language whereas JavaScript is only a scripting language. 
-The syntax of JavaScript is mostly influenced by the programming language C.`
+The syntax of JavaScript is mostly influenced by the programming language C.
 
 4. **Where does JavaScript run?**
 
-`JS runs on the web browser. So when a user makes an HTTP request and there is JS in it.
-It is sent to the web browser to and it's to the browser to execute it.`
+JS runs on the web browser. So when a user makes an HTTP request and there is JS in it.
+It is sent to the web browser to and it's to the browser to execute it.
 
 ## Keywords
 * **client-side**
@@ -60,17 +62,17 @@ It is sent to the web browser to and it's to the browser to execute it.`
 
 5. **What is a web server?**
 
-`The main job of a web server is to display website content through storing, processing and delivering webpages to users. 
+The main job of a web server is to display website content through storing, processing and delivering webpages to users. 
 Besides HTTP, web servers also support SMTP (Simple Mail Transfer Protocol) 
-and FTP (File Transfer Protocol), used for email, file transfer and storage.`
+and FTP (File Transfer Protocol), used for email, file transfer and storage.
 
 6. **What is a server?**
 
-`A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network.`
+A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network.
 
 7. **What is a client/ client-side?**
 
-`In web development, 'client side' refers to everything in a web application that is displayed or takes place on the client (end user device). This includes what the user sees, such as text, images, and the rest of the UI, along with any actions that an application performs within the user's browser.`
+In web development, 'client side' refers to everything in a web application that is displayed or takes place on the client (end user device). This includes what the user sees, such as text, images, and the rest of the UI, along with any actions that an application performs within the user's browser.
 
 7. **Why is JavaScript a dynamically typed language?**
 
@@ -88,7 +90,7 @@ and FTP (File Transfer Protocol), used for email, file transfer and storage.`
 > * Python
 
 
-8. > **Statically typed**
+8. **Statically typed**
 This means type checking is required. and it happens at compile time.
 Examples of statically typed languages:
 > * Java
@@ -100,6 +102,18 @@ Examples of statically typed languages:
 Type checking is a process of verifying the type of a variable or function.
 It is done at compile time.
 
+## Getting into Code
+* ## **Our First Simple Javascript Program**
+1. Data types
+2. Strings
+3. Arrays
+4. Arithmetic Operations
+
+## **Projects**
+* Purchase app
+* Counter app
+* Calculator app
+* Registration Form
 
 
 

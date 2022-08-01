@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First JS APP</title>
+</head>
+<body>
+    <!-- Ways of Rendering JS  -->
+    <!-- 1. inline JS Rendering -->
+    <p>
+        <h1>About Me</h1>
+        Hello World!!, <br>
+        I am Joshua Nyarko Boateng a Software Developer Train 👨‍💻  at Integris360💫. <br>
+        I  love 💖🤗 GoB3 🥘 and Ramen 🍜 alot.
+        I joined Integris360 in <strong> <script>document.write(new Date().getDate(), " / ", new Date().getMonth(), " / ", new Date().getFullYear()) </script></strong>
+    </p>
+    <br>
+    <button onclick="prompt()">Click Me</button>
+    
+    <!-- 2. embeded JS Rendering -->
+    <script type="text/Javascript">
+        let message = " "
+        function prompt(){
+            let alert_message = "Hello world!!,  this is my first Javascript program"
+            message = alert(alert_message)
+        }
+
+    </script>
+    <!-- 3. external JS Rendering -->
+    <script src="firstApp.js"></script>
+</body>
+</html>
