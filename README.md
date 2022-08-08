@@ -15,6 +15,7 @@ This is a repository for training persons interested in web development with a s
 9. [CSS Gradient Colors](https://cssgradient.io/blog/css-gradient-text/)
 ## References
 * [John Smilga](https://www.johnsmilga.com)
+* [Jessica Wilkins](https://www.freecodecamp.org/news/author/jessica-wilkins/)
 * [Freecodecamp](https://www.freecodecamp.org)
 ## Course Outline
 > [Lesson 1](./lesson1/lesson1.md)
