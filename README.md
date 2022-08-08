@@ -7,6 +7,7 @@ This is a repository for training persons interested in web development with a s
 2. [Guru99 - intro to javascript](https://www.guru99.com/introduction-to-javascript.html)
 3. [W3schools - javascript](https://www.w3schools.com/)
 4. [What client-side and server-side is](https://www.cloudflare.com/learning/serverless/glossary/client-side-vs-server-side/)
+9. [JS info](https://javascript.info/intro)
 5.  [Box-Shadows](https://getcssscan.com/css-box-shadow-examples)
 6. [DOM Events - addEventListener](https://www.w3schools.com/jsref/dom_obj_event.asp)
 7. [40 Javascript Projects - Freecodecamp](https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-color-flipper)
