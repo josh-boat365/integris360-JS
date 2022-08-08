@@ -115,6 +115,9 @@ It is done at compile time.
 * Calculator app
 * Registration Form
 
+<!-- using innerHTML -->
+<!-- using selectors -->
+
 
 
 
