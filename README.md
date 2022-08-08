@@ -12,6 +12,7 @@ This is a repository for training persons interested in web development with a s
 6. [DOM Events - addEventListener](https://www.w3schools.com/jsref/dom_obj_event.asp)
 7. [40 Javascript Projects - Freecodecamp](https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-color-flipper)
 8. [Youtube - Tutorial on John Smilga's 15 JS Beginner Friendly Projects](https://www.youtube.com/watch?v=3PHXvlpOkf4&t=421s)
+9. [CSS Gradient Colors](https://cssgradient.io/blog/css-gradient-text/)
 ## References
 * [John Smilga](https://www.johnsmilga.com)
 * [Freecodecamp](https://www.freecodecamp.org)
