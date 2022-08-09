@@ -50,12 +50,19 @@ j. Whitespace
 k. Good Code Structure (indentation)
 ## 3. Html Tables
 a. The Table Element
+
 b. Table head
+
 c. Table body
+
 d. Table Footer
+
 e. Table Row
+
 f. Table Heading (th)
+
 g. Table data
+
 h. Table elements attributes (border, colspan, etc)
 ## 4. Html Forms
 a. The Form Element
