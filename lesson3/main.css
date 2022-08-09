@@ -1,0 +1,25 @@
+body{
+    background-color: #f1f3f3;
+}
+.main{
+    width: 20rem;
+    padding: 1rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+.header{
+    font-size: 2rem;
+}
+#number{
+    font-size: 3rem;
+}
+.btn{
+    padding: 1rem;
+    border: solid 2px;
+    border-radius: 10px;
+    background-color: white;
+}
+input[type='button']{
+    text-transform: uppercase;
+}
+
