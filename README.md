@@ -69,18 +69,25 @@ h. Form elements Attributes (onsubmit, method, action, required, etc)
 i. Html form validation
 ## 5. Html Semantics
 a. Element Placement
+
 b. Figure and Figcaption
+
 c. Aside
+
 d. Section
+
 e. embedding media
-CSS Course Outline
+
+## CSS Course Outline
 Here we will learn how to beautify or add styles to web pages with the most current version of
 CSS ⇒ CSS3.
 > First Two Weeks For Learning about raw css.
 Last Two Weeks For Learning about a selected css library (etc material, bootstrap, tailwind etc) .
 ## 1. Introduction
 a. Introduction to CSS
+
 b. Manuals and specification
+
 c. Code Editors
 ## 2. CSS Selectors
 a. Simple Selectors
@@ -114,8 +121,11 @@ e. Pseudo-element Selectors
 a. CSS Variables
 ## 4. CSS Values
 a. Colors
+
 b. Length, sizes and numbers
+
 c. Pre-Defined Options
+
 d. Functions
 ## 5. CSS Specificity
 a. Inline styles
