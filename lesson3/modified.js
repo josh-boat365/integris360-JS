@@ -18,11 +18,13 @@ buttons.forEach(function (btn) {
 
   //using btn as the object to represent a button in the loop -> for each button element.
   //adding an event listener-> 'click' on each button when clicked
-  btn.addEventListener("click", function (e) {
-    // console.log(e.currentTarget.classList);
+  btn.addEventListener("click", function (clickEvent) {
+    // console.log(clickEvent.currentTarget.classList);
 
     //getting the class name of the clicked button
-    const className = e.currentTarget.classList;
+    const className = clickEvent.currentTarget.classList;
+
+    // for(let i = 0; i > 5; i++)
 
     //checking the NodeList of the clicked button if it has a class name of 'decrease' -> then reduce 'count'
     if (className.contains("decrease")) {
@@ -33,7 +35,7 @@ buttons.forEach(function (btn) {
       count++;
     }
     //since the rest of the classes has been taken care of it's left with 'reset' so by default we are setting 'count' to zero
-    else {
+    else if (className.contains("reset")) {
       count = 0;
     }
 
@@ -45,7 +47,7 @@ buttons.forEach(function (btn) {
       counter.style.color = "red";
     } else if (count > 0) {
       counter.style.color = "green";
-    } else {
+    } else if (count === 0) {
       counter.style.color = "black";
     }
   });
