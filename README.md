@@ -17,6 +17,8 @@ This is a repository for training persons interested in web development with a s
 ## Libraries for Animations
 1. [Animate.css](https://animate.style/)
 1. [Aos](https://michalsnik.github.io/aos/)
+1. [Installing Lavarel on MacOS](https://www.youtube.com/watch?v=68MR5UOC3VI)
+1. [Understanding what Docker is](https://www.youtube.com/watch?v=3c-iBn73dDE)
 ## References
 * [John Smilga](https://www.johnsmilga.com)
 * [Jessica Wilkins](https://www.freecodecamp.org/news/author/jessica-wilkins/)
