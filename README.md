@@ -13,6 +13,10 @@ This is a repository for training persons interested in web development with a s
 7. [40 Javascript Projects - Freecodecamp](https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-color-flipper)
 8. [Youtube - Tutorial on John Smilga's 15 JS Beginner Friendly Projects](https://www.youtube.com/watch?v=3PHXvlpOkf4&t=421s)
 9. [CSS Gradient Colors](https://cssgradient.io/blog/css-gradient-text/)
+
+## Libraries for Animations
+1. [Animate.css](https://animate.style/)
+1. [Aos](https://michalsnik.github.io/aos/)
 ## References
 * [John Smilga](https://www.johnsmilga.com)
 * [Jessica Wilkins](https://www.freecodecamp.org/news/author/jessica-wilkins/)
