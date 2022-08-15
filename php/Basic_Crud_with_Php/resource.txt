@@ -1,2 +1,5 @@
 PHP CRUD APP
 https://www.tutorialrepublic.com/php-tutorial/php-mysql-crud-application.php#
+
+LEARNING PHP From scratch Youtube 
+https://www.youtube.com/c/ProgramWithGio
