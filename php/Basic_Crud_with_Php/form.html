@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form onsubmit="validate()" method="post">
+			<input type="text" name="" id="name" />
+			<input type="email" name="" id="email" />
+			<input type="tel" name="" id="password" />
+			<input type="button" value="login" />
+		</form>
+
+		<script>
+			function validate() {
+				var name = document.getElementById("name").value;
+				let nameREGX = /^[a-zA-Z]+$/;
+				var email = document.getElementById("email").value;
+				let emailREGEX =
+					/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+				var password = document.getElementById("password").value;
+				let passwordREGEX =
+					/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+				let phoneREGEX = /^[0-9]{10}$/;
+
+				if (nameREGX.test(name) == false) {
+					alert("Name is required");
+					return false;
+				} else if (email == "") {
+					alert("Email is required");
+					return false;
+				} else if (password == "") {
+					alert("Password is required");
+					return false;
+				} else {
+					return true;
+				}
+			}
+		</script>
+	</body>
+</html>

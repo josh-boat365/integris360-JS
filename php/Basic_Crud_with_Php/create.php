@@ -3,8 +3,8 @@
 require_once "database_connection.php";
 
 // Define variables and initialize with empty values
-$name = $address = $salary = "";
-$name_err = $address_err = $salary_err = "";
+$name = $phone = "";
+$name_err = $phone_err = "";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -19,36 +19,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Validate address
-    $input_address = trim($_POST["address"]);
+    $input_phone = trim($_POST["phone"]);
     if (empty($input_address)) {
-        $address_err = "Please enter an address.";
+        $phone_err = "Please enter an phone.";
     } else {
-        $address = $input_address;
-    }
-
-    // Validate salary
-    $input_salary = trim($_POST["salary"]);
-    if (empty($input_salary)) {
-        $salary_err = "Please enter the salary amount.";
-    } elseif (!ctype_digit($input_salary)) {
-        $salary_err = "Please enter a positive integer value.";
-    } else {
-        $salary = $input_salary;
+        $phone = $input_phone;
     }
 
     // Check input errors before inserting in database
-    if (empty($name_err) && empty($address_err) && empty($salary_err)) {
+    if (empty($name_err) && empty($phone_err)) {
         // Prepare an insert statement
-        $sql = "INSERT INTO employees (name, address, salary) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO employees (pname, pphoned) VALUES (?, ?)";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "sss", $param_name, $param_address, $param_salary);
+            mysqli_stmt_bind_param($stmt, "sss", $param_name, $param_phone);
 
             // Set parameters
             $param_name = $name;
-            $param_address = $address;
-            $param_salary = $salary;
+            $param_phone = $phone;
+
 
             // Attempt to execute the prepared statement
             if (mysqli_stmt_execute($stmt)) {
@@ -98,14 +88,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <span class="invalid-feedback"><?php echo $name_err; ?></span>
                         </div>
                         <div class="form-group">
-                            <label>Address</label>
-                            <textarea name="address" class="form-control <?php echo (!empty($address_err)) ? 'is-invalid' : ''; ?>"><?php echo $address; ?></textarea>
-                            <span class="invalid-feedback"><?php echo $address_err; ?></span>
-                        </div>
-                        <div class="form-group">
-                            <label>Salary</label>
-                            <input type="text" name="salary" class="form-control <?php echo (!empty($salary_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $salary; ?>">
-                            <span class="invalid-feedback"><?php echo $salary_err; ?></span>
+                            <label>Phone</label>
+                            <input type="text" name="phone" class="form-control <?php echo (!empty($phone_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $phone; ?>">
+                            <span class="invalid-feedback"><?php echo $phone_err; ?></span>
                         </div>
                         <input type="submit" class="btn btn-primary" value="Submit">
                         <a href="index.php" class="btn btn-secondary ml-2">Cancel</a>

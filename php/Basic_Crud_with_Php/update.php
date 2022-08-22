@@ -3,8 +3,8 @@
 require_once "database_connection.php";
 
 // Define variables and initialize with empty values
-$name = $address = $salary = "";
-$name_err = $address_err = $salary_err = "";
+$name = $phone = "";
+$name_err = $phone_err = "";
 
 // Processing form data when form is submitted
 if (isset($_POST["id"]) && !empty($_POST["id"])) {
@@ -21,37 +21,26 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $name = $input_name;
     }
 
-    // Validate address address
-    $input_address = trim($_POST["address"]);
-    if (empty($input_address)) {
-        $address_err = "Please enter an address.";
+    // Validate phone
+    $input_phone = trim($_POST["phone"]);
+    if (empty($input_phone)) {
+        $phone_err = "Please enter an phone.";
     } else {
-        $address = $input_address;
-    }
-
-    // Validate salary
-    $input_salary = trim($_POST["salary"]);
-    if (empty($input_salary)) {
-        $salary_err = "Please enter the salary amount.";
-    } elseif (!ctype_digit($input_salary)) {
-        $salary_err = "Please enter a positive integer value.";
-    } else {
-        $salary = $input_salary;
+        $phone = $input_phone;
     }
 
     // Check input errors before inserting in database
-    if (empty($name_err) && empty($address_err) && empty($salary_err)) {
+    if (empty($name_err) && empty($phone_err)) {
         // Prepare an update statement
-        $sql = "UPDATE employees SET name=?, address=?, salary=? WHERE id=?";
+        $sql = "UPDATE phonebook SET name=?, phone=? WHERE id=?";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "sssi", $param_name, $param_address, $param_salary, $param_id);
+            mysqli_stmt_bind_param($stmt, "sssi", $param_name, $param_phone, $param_id);
 
             // Set parameters
             $param_name = $name;
-            $param_address = $address;
-            $param_salary = $salary;
+            $param_phone = $phone;
             $param_id = $id;
 
             // Attempt to execute the prepared statement
@@ -77,7 +66,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
         $id =  trim($_GET["id"]);
 
         // Prepare a select statement
-        $sql = "SELECT * FROM employees WHERE id = ?";
+        $sql = "SELECT * FROM phonebook WHERE id = ?";
         if ($stmt = mysqli_prepare($link, $sql)) {
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "i", $param_id);
@@ -96,8 +85,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
 
                     // Retrieve individual field value
                     $name = $row["name"];
-                    $address = $row["address"];
-                    $salary = $row["salary"];
+                    $phone = $row["phone"];
                 } else {
                     // URL doesn't contain valid id. Redirect to error page
                     header("location: error.php");
@@ -150,14 +138,9 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
                             <span class="invalid-feedback"><?php echo $name_err; ?></span>
                         </div>
                         <div class="form-group">
-                            <label>Address</label>
-                            <textarea name="address" class="form-control <?php echo (!empty($address_err)) ? 'is-invalid' : ''; ?>"><?php echo $address; ?></textarea>
-                            <span class="invalid-feedback"><?php echo $address_err; ?></span>
-                        </div>
-                        <div class="form-group">
-                            <label>Salary</label>
-                            <input type="text" name="salary" class="form-control <?php echo (!empty($salary_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $salary; ?>">
-                            <span class="invalid-feedback"><?php echo $salary_err; ?></span>
+                            <label>Phone</label>
+                            <input type="text" name="phone" class="form-control <?php echo (!empty($phone_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $phone; ?>">
+                            <span class="invalid-feedback"><?php echo $phone_err; ?></span>
                         </div>
                         <input type="hidden" name="id" value="<?php echo $id; ?>" />
                         <input type="submit" class="btn btn-primary" value="Submit">

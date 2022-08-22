@@ -37,14 +37,14 @@
 					<div class="mt-5 mb-3 clearfix">
 						<h2 class="pull-left">💊ShirlPharm Employees🩺 Details</h2>
 						<h5>Welcome to 💊ShirlPharm🩺</h5>
-						<a href="create.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Employee</a>
+						<a href="create.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Person to Phonebook</a>
 					</div>
 					<?php
 					// Include database connection file
 					require_once "database_connection.php";
 
 					// Attempt select query execution
-					$sql = "SELECT * FROM employees";
+					$sql = "SELECT * FROM phonebook";
 					if ($result = mysqli_query($link, $sql)) {
 						if (
 							mysqli_num_rows($result) >
@@ -55,8 +55,7 @@
 							echo "<tr>";
 							echo "<th>#</th>";
 							echo "<th>Name</th>";
-							echo "<th>Address</th>";
-							echo "<th>Salary</th>";
+							echo "<th>Phone</th>";
 							echo "<th>Action</th>";
 							echo "</tr>";
 							echo "</thead>";
@@ -64,10 +63,9 @@
 
 							while ($row = mysqli_fetch_array($result)) {
 								echo "<tr>";
-								echo "<td>" . $row['id'] . "</td>";
-								echo "<td>" . $row['name'] . "</td>";
-								echo "<td>" . $row['address'] . "</td>";
-								echo "<td>" . $row['salary'] . "</td>";
+								echo "<td>" . $row['pid'] . "</td>";
+								echo "<td>" . $row['pname'] . "</td>";
+								echo "<td>" . $row['pphoned'] . "</td>";
 								echo "<td>";
 								echo '<a href="read.php?id=' . $row['id'] . '" class="mr-3" title="ViewRecordata-toggle="tooltip"><span class="fa fa-eye"></span></a>';
 								echo '<a href="update.php?id=' . $row['id'] . '" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
